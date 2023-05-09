@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1-bmi.css">
+<script src="2-bmi.js"></script>
+</head>
+<style>
+ul {
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow: hidden; 
+    background-color: #1b2f55;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: 'Arial';    
+}
+        
+li {
+    float: left;
+}
+        
+li a {
+    display: block; 
+    color: rgb(250, 247, 247); 
+    font-weight: bold;
+    text-align: center; 
+    padding: 20px 26px; 
+    text-decoration: none;
+}
+        
+li a:hover {
+    background-color: #f1f1f1;
+}
+
+.footer {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}    
+</style>
+<body style="background-color:#f1f1f1">
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="educational.html">Education</a></li>
+        <li><a href="project.html">My Project</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+      </ul>
+
+<img class="w3-image" src="p0.PNG" alt=" " width="100%" height="100%">
+
+<div class="w3-row w3-container" style="padding-top: 50px;">
+    <div class="w3-half w3-container">
+        <div>
+        <img src="p7.PNG" style="width:100%" width="500" height="500">
+        <h2>Website</h2>
+        <p>During my internship, I created a website using the template that already done. I was responsible for coding 
+            and transfer data. I also tested the website for functionality and usability.</p>
+        </div>
+    </div>
+
+    <div class="w3-half w3-container">
+        <div>
+            <img src="p2.PNG" style="width:100%" width="500" height="500">
+            <h2>Village Scenery</h2>
+            <p>Last semester for my project I used OpenGL to create a village scenery. OpenGL is a 3D graphics library 
+                that allows users to create 3D models and animations. I used various tools within OpenGL 
+                create the house, tree, river, boat and hill that in my village.
+                I was able to customize my village to my liking using a variety of color.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row w3-container" style="padding-bottom: 50px; padding-top: 50px;">
+    <div class="w3-half w3-container">
+        <div>
+            <img src="p5.PNG" style="width:100%" width="500" height="500">
+            <h2>Maze Game</h2>
+            <p> During my course CSC541, I used Scratch to create a maze game. I used various tools within Scratch such 
+                as the scripting tools to create the maze, the graphics and animation tools to customize the characters 
+                and objects, and the sound and music tools to add sound effects </p>
+        </div>
+    </div>
+
+    <div class="w3-half w3-container">
+        <div>
+            <img src="p1.png" style="width:100%" width="500" height="500">
+            <h2>My Room</h2>
+            <p>I used Blender to create my room. Blender is a free and open-source 3D creation suite that allows users 
+                to create 3D models. I used various tools within Blender such as the modeling 
+                tools to create the walls, ceiling, and furniture of my room, the materials and textures to give them a realistic 
+                look, and the lighting and camera settings to give the room a more inviting ambiance.</p>
+        </div>
+    </div>
+</div>
+
+<form id="bmi-form" onsubmit="return calcBMI();">
+    <div class="bmi-label"><h3>System:</h3></div>
+    <div class="bmi-row">
+      <label>
+        <input type="radio" id="bmi-metric" name="bmi-measure" onchange="measureBMI()" checked> Metric
+      </label>
+      <label>
+        <input type="radio" id="bmi-imperial" name="bmi-measure" onchange="measureBMI()"> Imperial
+      </label>
+    </div>
+
+    <div class="bmi-label">
+      Weight (<span id="bmi-weight-unit">KG</span>):
+    </div>
+    <div class="bmi-row">
+      <input id="bmi-weight" type="number" min="1" max="635" required>
+    </div>
+
+    <div class="bmi-label">Height (<span id="bmi-height-unit">CM</span>):</div>
+    <div class="bmi-row">
+      <input id="bmi-height" type="number" min="54" max="272" required>
+    </div>
+
+    <input type="submit" value="Calculate BMI">
+    <span id="bmi-results"></span>
+</form>
+
+<!--FOOTER-->
+<div class="footer">
+    Contact Us:
+    <br>No Phone: 01x-xxxxxxxxx
+    <br>Email: abc@gmail.com
+</div>
+
+</body>
+</html>

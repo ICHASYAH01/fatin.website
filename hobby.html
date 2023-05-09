@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBBY</title>
+    <link rel ="stylesheet" href="index.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+@media screen and (min-width: 480px)
+{
+
+    nav .logo .a{
+       display:inline-flex;
+    }
+}
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    max-height: 1000vh;
+}
+
+/* NAVIGATION BAR */
+.header{
+    /*background-color:#70acd3;*/
+    background-image: linear-gradient(to top, #ffccff, #ffcccc, #ff99cc, #ff6699, #ff6666); 
+    padding: 25px; 
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: 'Arial';
+    color: #16225E;
+}
+                   
+ul {
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow: hidden; 
+    background-color: #1b2f55;    
+}
+        
+li {
+    float: left;
+}
+        
+li a {
+    display: block; 
+    color: white; 
+    font-weight: bold;
+    text-align: center; 
+    padding: 20px 26px; 
+    text-decoration: none;
+}
+        
+li a:hover {
+    background-color: #f1f1f1;
+}
+
+.ball1{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 230px;
+    left: 0px;
+    animation: bounce 1.9s infinite;
+}
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 40px;
+    }
+    50%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(240px);
+    }75%{
+        height: 50px;
+        width: 57px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.ball2{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 190px;
+    left: 90%;
+    animation: bounce 1.9s infinite;
+}
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 40px;
+    }
+    50%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(240px);
+    }75%{
+        height: 50px;
+        width: 57px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.ball3{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 145px;
+    left: 50%;
+    animation: bounce 1.9s infinite;
+}
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 40px;
+    }
+    50%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(240px);
+    }75%{
+        height: 50px;
+        width: 57px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style the footer */
+.footer {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
+
+<body style="background-color:#f1f1f1">
+
+    
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="educational.html">Education</a></li>
+      <li><a href="project.html">My Project</a></li>
+      <li><a href="hobby.html">Hobby</a></li>
+    </ul>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img1.PNG" width="100%" height="100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img2.PNG" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img3.PNG" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+    <div class="container">
+        <img src="book.jpg" alt="Notebook" style="width:100%; padding-top: 60px;">
+        <div class="content">
+          <h1>Reading</h1>
+          <p> Reading a book is one of the best ways to gain knowledge and understanding.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="music.jpeg" alt="Notebook" style="width:100%; padding-top: 100px;">
+        <div class="content">
+          <h1>Listening Music</h1>
+          <p> Listening to music can be beneficial for many reasons. It can help reduce stress and anxiety.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="games.jpeg" alt="Notebook" style="width:100%; padding-top: 100px;">
+        <div class="content">
+          <h1>Playing Games</h1>
+          <p> Playing games can be beneficial for kids in many ways. Games can help to develop problem-solving skills.</p>
+        </div>
+    </div>
+
+
+    <div style="margin-left:20px; padding:1px 16px;height:500px;">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+
+    
+    <div class="footer">
+        Contact Us:
+        <br>No Phone: 01x-xxxxxxxxx
+        <br>Email: abc@gmail.com
+    </div>
+
+</body>
+</html>
